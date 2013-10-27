@@ -1,7 +1,8 @@
 class FlightFinder
   include PageObject
 
-  page_url("http://newtours.demoaut.com/mercuryreservation.php")
+  #page_url("http://newtours.demoaut.com/mercuryreservation.php")
+  page_url "#{FigNewton.base_url}/mercuryreservation.php"
 
   radio_button(:round_trip_radio, :name => 'tripType', :value => 'roundtrip')
   select_list(:number_of_passengers, :name => 'passCount')
@@ -21,7 +22,6 @@ class FlightFinder
   end
 
   def verify_flight_options (city)
-    #puts self.from_location_options.class
     fail unless self.from_location_options.include? city
   end
 

@@ -1,7 +1,8 @@
 class SelectFlight
   include PageObject
 
-  page_url("http://newtours.demoaut.com/mercuryreservation2.php")
+  #page_url("http://newtours.demoaut.com/mercuryreservation2.php")
+  page_url "#{FigNewton.base_url}/mercuryreservation2.php"
 
   button(:select_flights_button, :name => 'reserveFlights')
 

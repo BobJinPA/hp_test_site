@@ -1,1 +1,1 @@
-default: --no-source --color --format pretty
+default: FIG_NEWTON_FILE=local.yml --tags ~@not_ready --format PrettyFace::Formatter::Html --out testresults/report.html

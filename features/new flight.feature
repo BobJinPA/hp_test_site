@@ -1,10 +1,12 @@
-Feature: As a customer
+Feature: As a customer who eats cheese
   I want to book a flight
 
+ @not_ready
 Scenario: simple flight
   Given I am logged onto the site
   Then I can select a flight from New York
 
+ @not_ready
 Scenario: simple flight
   Given I am logged onto the site
   Then I can select a flight from McConnellsburg
